@@ -1,0 +1,64 @@
+ <form className='form'>
+        <div className='wrap'></div>
+        <label className='first'  >First Name   <input type='text' name='firstname' /> </label><br/>
+        <label>Second Name <input type='text' name='email'/>  </label><br/>
+      <label htmlFor="options">What is Your Gender</label><br/>
+      <select id="options" value={selectedOption} onChange={handleSelectChange}>
+        <option value="">Select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="Prefer Not to Answer">Prefer Not to Answer</option>
+      </select><br/>
+      {/* {selectedOption && <p>You selected: {selectedOption}</p>}<br/> */}
+      <label htmlFor='options'>What is the Blood Group</label>
+      <select id='options' value={selectedOption} onChange={handleSelectChange}>
+        <option value=''>Select...</option>
+        <option value='A+'>A+</option>
+        <option value='A-'>A-</option>
+        <option value='B+'>B+</option>
+        <option value='B-'>B-</option>
+        <option value='AB+'>AB+</option>
+        <option value='AB-'>AB-</option>
+        <option value='O+'>O+</option>
+        <option value='O-'>O-</option>
+      </select><br/>
+      <label htmlFor='options'>What illnesses or diseases have you had in the past?</label><br/>
+      <select id='options' value={selectedOption} onChange={handleSelectChange}>
+        <option value='' >Select</option>
+        <option value='influenza' >Influenza</option>
+        <option value='chickenpox' >ChickenPox</option>
+        <option value='Measels' >Measels</option>
+        <option value='Mumps' >Mumps</option>
+        <option value='cancer' >cancer</option>
+        <option value='asthma' >Asthma</option>
+        <option value='others' >other(Please Specify)</option>
+         
+      </select><br/>
+      <label htmlFor='options'>Have you suffered from any fracture or sprain</label><br/>
+      <select id='options'  value={selectedOption} onChange={handleSelectChange}>
+        <option value=''>Select</option>
+        <option value='Yes'>Yes</option>
+        <option value='No'>No</option>
+      </select><br/>
+      <label htmlFor='options'>Do you have any stiches before?</label><br/>
+      <select id='options' value={selectedOption} onChange={handleSelectChange}>
+        <option value=''>Select</option>
+        <option value='yes'>Yes</option>
+        <option value='no'>No</option>
+      </select><br/>
+      </form>
+
+
+
+
+
+
+
+      // states
+
+       
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handleSelectChange = (e) => {
+    setSelectedOption(e.target.value);
+  };

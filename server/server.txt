@@ -1,0 +1,49 @@
+const express = require('express');
+
+const axios = require('axios');
+
+const app = express();
+
+
+const PORT = process.env.PORT || 4000;
+
+const OPENAI_KEY = "";
+
+// middleware
+app.use(express.json());
+
+//Routing
+// app.get('/api/form-question', function(req,res){
+//     res.send('Hello World!')
+// })
+
+app.get('/api/form-question', async function(req,res){
+     try{
+       const response = await axios.post(
+        // 'open-ai api link'
+        {
+            // prompt can be modified according to the specifications
+            prompt:"Generate 10 medical questions for a patient with X/Y disease",
+            max_tokens:50,
+        },
+        {
+            // setting headers
+            headers: {
+                "Content-Type":"application/json",
+                Authorization:''
+            }
+        }
+       )
+       res.json({question:response.data.choices[0].text.trim()})
+    }
+    catch(e){
+        console.log(e);
+        res.status(500).json({message:'Failed in fetching the query !'})
+    }
+})
+// Further crud operations can be handled accordingly
+
+ app.listen(PORT,function(){
+    console.log(`Server is running on PORT ${PORT}`)  
+})
+

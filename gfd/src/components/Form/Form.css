@@ -1,0 +1,80 @@
+ 
+ .main{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   
+ }
+
+ .frm{
+  padding: 20px;
+  margin-top: 50px;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.632);
+  color: white;
+  border-radius: 10px;
+ }
+ .first{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ .firstin{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+
+ .last{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ .lastin{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+ .gender{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ .genderin{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+
+ .blood{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ .bloodin{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+ .disease{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ .dieseasein{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+ .btn{
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.247);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: none;  
+ }
+
+ .di{
+    margin-top: 20px;
+ }
+ .qs{
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
+ .txt{
+    margin-top: 10px;
+    margin-bottom: 15px;
+ }
