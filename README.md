@@ -1,1 +1,1 @@
-// Made a basic web applicatio for Data for common Good.
+// Made a basic web applicatio for Good For Common Data.
